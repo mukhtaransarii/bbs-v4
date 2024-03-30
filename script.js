@@ -68,17 +68,59 @@ SLIDER_LIST.addEventListener('click', (e) => {
 let MOREPROJECT = document.querySelector('#page3 .bottomTag');
 MOREPROJECT.addEventListener('click', (e) => {
   document.querySelector(".page7").classList.add("page7Show")
+  document.querySelector("body").classList.remove("bodyScroll")
+  gsap.from("ul li #Pimg ,ul li #paid", {
+    y: 90,
+    opacity: 0,
+    duration: 1,
+    stagger: 0.05,
+  })
+  gsap.from("ul li #des", {
+    y: 40,
+    opacity: 0,
+    duration: 1,
+    stagger: 0.05,
+  })
+  gsap.from(".page7 .Pnav-1, .page7 .Pnav-2, .page7 .ProjAndLess", {
+    y: -90,
+    opacity: 0,
+    duration: 1,
+    stagger: 0.05,
+  })
+  
 });
 //PAGE 7 PROJECT PAGE HIDE FUNCTION
 let PROJECT_BACKBUTTON = document.querySelector('.page7 .Pnav-2');
 PROJECT_BACKBUTTON.addEventListener('click', (e) => {
   document.querySelector(".page7").classList.remove("page7Show")
+  document.querySelector("body").classList.add("bodyScroll")
 });
 //SLIDER PROJECT BUTTON CLICK TO SHOW SLIDER 
 let SLIDERPROJECT = document.querySelector('slider #SlidePr');
 SLIDERPROJECT.addEventListener('click', (e) => {
   setTimeout(function() {
    document.querySelector(".page7").classList.add("page7Show")
+   document.querySelector("body").classList.remove("bodyScroll")
+   gsap.from("ul li #Pimg ,ul li #paid", {
+    y: 90,
+    opacity: 0,
+    duration: 1,
+    delay: 1,
+    stagger: 0.05,
+  })
+  gsap.from("ul li #des", {
+    y: 40,
+    opacity: 0,
+    duration: 1,
+    delay: 1,
+    stagger: 0.05,
+  })
+  gsap.from(".page7 .projectNav, .page7 .ProjAndLess", {
+    y: -90,
+    opacity: 0,
+    duration: 1,
+    stagger: 0.05,
+  })
   }, 500);
 });
 
@@ -103,11 +145,11 @@ let theme = document.querySelector("#theme")
 theme.addEventListener("click",function(){
   if(Click == 0){
     document.querySelector("body").classList.add("darkMode")
-    theme.innerHTML = `<p>06</p> <h1><a>DARK THEME</a></h1>`
+    theme.innerHTML = `<p>06</p> <h1><a>DARK MODE</a></h1>`
     Click = 1;
   }else{
     document.querySelector("body").classList.remove("darkMode")
-    theme.innerHTML = `<p>06</p> <h1><a>LIGHT THEME</a></h1>`
+    theme.innerHTML = `<p>06</p> <h1><a>LIGHT MODE</a></h1>`
     Click = 0;
   }
 });

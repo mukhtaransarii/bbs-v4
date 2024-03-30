@@ -46,11 +46,18 @@ tl.from("#page1 .box",{
   padding: 0,
 })
 //CARD INNER CONTENT ANIMATION AUTOMATIC 
-tl.from("#page1 .box h6 , #page1 .bottomTag , #page1 .bottomTag p, #page1 .bottomTag i", {
+const Page1BoxH6 = new SplitType('#page1 .box h6')
+tl.from("#page1 .box h6 .char",{
+  yPercent: 130,
+  duration: 0.2,
+  stagger: 0.02,
+})
+
+tl.from("#page1 .bottomTag , #page1 .bottomTag p, #page1 .bottomTag i", {
   y : 50,
   opacity: 0,
   duration: 0.6,
-  stagger: 0.3,
+  stagger: 0.1,
 })
 
 
@@ -74,13 +81,13 @@ gsap.from("#page2 .pageNumHead , #page2 .pageHeading .char", {
        gsap.from("#para .line .word .char", {
          opacity: 0.2,
          duration: 3,
-         stagger: 3,
+         stagger: 1,
          scrollTrigger: {
            trigger: "#page2 .char",
            scroller : "body",
            scrub: 1,
            start: "top 60%",
-           end: "top -80%",
+           end: "top -20%",
          }
        })
 //PAGE 2 BOTTOM TAG

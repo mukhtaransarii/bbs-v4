@@ -1,24 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
-@font-face {
-  font-family: CARBON;
-  src: url(/fonts/carbon.woff);
-}
-@font-face {
-  font-family: HEADING-HEAVY;
-  src: url(/fonts/Heading58Heavy.woff);
-}
 @font-face {
   font-family: HEADING-THIN;
   src: url(/fonts/Heading51Thin.woff);
 }
+
 @font-face {
   font-family: SIGN;
-  src: url(/fonts/sign.ttf);
-}
-@font-face {
-  font-family: SIGN2;
   src: url(/fonts/sign.woff);
 }
 
@@ -41,7 +31,7 @@
 }
 body{
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   overflow: hidden;
 }
 .bodyScroll{
@@ -52,7 +42,7 @@ body{
 .loadingPage{
   height: 100vh;
   width: 100vw;
-  background-color: var(--white);
+  background-color: var(--black);
   position: fixed;
   top: 0;
   left: 0;
@@ -178,7 +168,7 @@ slider{
 }
 slider #slider1 li{
   list-style: none;
-  height: 50px;
+  height: 38px;
   margin: 3px 0px;
   display: flex;
   align-items: center;
@@ -189,8 +179,9 @@ slider #slider1 li p{
   margin-right: 20px;
  }
 slider #slider1 li a{
-  font-size: 50px;
-  font-family: HEADING-HEAVY;
+  font-size: 40px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
   font-stretch: 250%;
   cursor: pointer;
   color: black;
@@ -253,7 +244,8 @@ slider #slider1 li a:hover{
 }
 .name p{
   color: var(--white);
-  font-family: HEADING-HEAVY;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
   font-size: 16vw;
   line-height: 14vw;
   font-weight: bold;
@@ -263,8 +255,8 @@ slider #slider1 li a:hover{
 .name mark{
   background-color: transparent;
   color: var(--white);
-  font-family: HEADING-THIN;
-  font-weight: 500;
+  font-family: "Oswald", sans-serif;
+  font-weight: 50;
 }
 
 .box{
@@ -290,13 +282,16 @@ slider #slider1 li a:hover{
 .bottomTag i{
  font-size: 30px;
 }
-.box>h6{
+.box h6 .line .word .char{
   color: black;
-  font-family: HEADING-HEAVY;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
   font-size: 4vw;
   line-height: 4vw;
 }
-
+.box h6 .line{
+  overflow: hidden;
+}
 .b2{
   height: 62.5%;
   width: 50%;
@@ -314,11 +309,6 @@ slider #slider1 li a:hover{
   justify-content: center;
   gap: 10px;
 }
-.b3 h6{
-  
-}
-
-
 
 /* PAGE 2 */
 #page2{
@@ -333,7 +323,8 @@ slider #slider1 li a:hover{
   color: var(--white);
   font-size: 3.5vw;
   line-height: 3.5vw;
-  font-family: HEADING-HEAVY;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
   letter-spacing: 1px;
 }
  .pageHeading .line{
@@ -361,10 +352,9 @@ slider #slider1 li a:hover{
   text-underline-offset: 2px;
   text-decoration-thickness: 1px;
 }
-.signature{
-  font-family: SIGN2;
-  font-size: 4vw;
-  font-weight: 500;
+#signature{
+  margin-top: 10px;
+  width: 120px;
 }
 #page2 .bottomTag{
   width: 300px;
@@ -379,6 +369,20 @@ slider #slider1 li a:hover{
   justify-content: space-between;
   align-items: center;
 }
+
+#page1 .bottomTag:hover{
+  box-shadow: 0px 0px 10px 3px #A18BF9;
+  transition: 0.5s;
+}
+#page2 .bottomTag:hover{
+  box-shadow: 0px 0px 10px 3px #D0F467;
+  transition: 0.5s;
+}
+#page3 .bottomTag:hover{
+  box-shadow: 0px 0px 10px 3px #D0F467;
+  transition: 0.5s;
+}
+
 a{
   text-decoration: none;
   color: black;
@@ -490,7 +494,7 @@ a{
   height: 100%;
   width: 100%;
   background-color: var(--black);
-  transition: 1s linear;
+  transition: 0.5s ease-in;
   
   position: fixed;
   top: 0;
@@ -519,6 +523,10 @@ a{
   display: flex;
   align-items: center;
   overflow: hidden;
+}
+.projectNav .Pnav-2:hover{
+  background-color: #FFBF2D;
+  box-shadow: 0px 0px 3px 1px #FFBF2D;
 }
 .projectNav .Pnav-1 i{
   height: 100%;
@@ -580,9 +588,9 @@ a{
   border-radius: 100px;
 }
 .page7 ul{
-  height: 100%;
-  width: 100%;
+  height: calc(100vh - 160px);
   padding: 0px 15px;
+  width: 100%;
   overflow: hidden;
   overflow-y: auto;
   
@@ -810,8 +818,8 @@ a{
     flex-direction: column;
   }
   #page1 .name p{
-    font-size: 24vw;
-    line-height: 23vw;
+    font-size: 20vw;
+    line-height: 20vw;
   }
   .box{
     padding: 20px;
@@ -819,8 +827,8 @@ a{
   .box p{
     font-size: 5vw;
   }
-  .box>h6{
-  font-size: 8.5vw;
+  .box h6 .line .word .char{
+  font-size: 7.5vw;
   line-height: 7vw;
   }
   .b2{
@@ -841,13 +849,10 @@ a{
     font-size: 15px;
   }
   #page2 .mySelf{
-    font-size: 4vw;
+    font-size: 5vw;
   }
   #page2 .socialLink{
     width: 100%;
-  }
-  #page2 .signature{
-    font-size: 12vw;
   }
   #page2 .bottomTag{
     width: 100%;
