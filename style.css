@@ -296,7 +296,7 @@ slider #slider1 li a:hover{
   height: 62.5%;
   width: 50%;
   
-  background-image: url(src/page1Photo.jpg);
+  background-image: url(src/page1Photo.webp);
   background-position: center;
   background-size: cover;
 }
