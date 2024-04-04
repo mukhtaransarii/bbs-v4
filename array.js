@@ -61,9 +61,9 @@ arr.forEach(function(elem,idx){
               <h2 id="Pnum">${elem.Pnum}</h2>
               <h2 id="Pname">${elem.Pname}</h2>
            
-              <a href="${elem.Preview}"><i class="ri-window-fill"></i> Preview website</a> 
+              <a  target="_blank" href="${elem.Preview}"><i class="ri-window-fill"></i> Preview website</a> 
               <span>and</span>
-              <a href="${elem.SourceCode}"><i class="ri-folder-6-fill"></i> Source Code</a> 
+              <a  target="_blank" href="${elem.SourceCode}"><i class="ri-folder-6-fill"></i> Source Code</a> 
               </div>
             </li>`
 })
