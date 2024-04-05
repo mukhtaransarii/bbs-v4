@@ -10,6 +10,12 @@ gsap.to("nav",{
     scrub: true,
    }
 })
+gsap.to("nav #nav-1 p",{
+  duration: 1,
+  stagger: 0.4,
+  delay: 5,
+  yoyo: true,
+})
 
 
 const tl = gsap.timeline()
@@ -17,8 +23,7 @@ const tl = gsap.timeline()
   tl.to(".loadingPage", {
     display: "none",
   })
-  
-
+ 
 //NAV INNER CONTENT SHOW AUTOMATIC
 tl.from("nav #nav-1 , nav #nav-3",{
   y: -60,

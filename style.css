@@ -80,9 +80,11 @@ nav{
   width: calc(100vw - 50px);
   margin-left: 25px;
   border-radius: 10px;
+  
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; 
+  
   padding: 0px 20px;
   position: fixed;
   top: 0;
@@ -92,7 +94,7 @@ nav{
 
 #nav-1{
   display: flex;
-  gap: 8px;
+  gap: 3px;
   align-items: center;
 }
 #nav-1 img{
@@ -102,7 +104,6 @@ nav{
    color: var(--white);
    font-weight: 500;
    font-size: 13px;
-   
  }
  #nav-1 mark{
    background-color: transparent;
