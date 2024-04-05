@@ -764,6 +764,7 @@ a{
   background-color: transparent;
   color: var(--black);
   font-weight: 100;
+  font-size: 10px;
 }
 
 .cookies{
