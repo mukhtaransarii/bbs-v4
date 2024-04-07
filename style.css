@@ -699,7 +699,7 @@ caret-color: var(--white);
   width: 100%;
   outline: none;
   border: 1px solid var(--white);
-  caret-color: black;
+  caret-color: var(--white);
   color: var(--white);
   padding-left: 10px;
   padding-top: 10px;
