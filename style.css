@@ -11,7 +11,10 @@
   font-family: SIGN;
   src: url(/fonts/sign.woff);
 }
-
+::selection{
+  background-color: var(--white);
+  color: var(--black);
+}
 *{
   padding: 0;
   margin: 0;
