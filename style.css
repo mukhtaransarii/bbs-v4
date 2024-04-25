@@ -49,7 +49,7 @@ body{
   --progress: 0;
   height: 1px;
   width: var(--progress);
-  background-color: red;
+  background-color: #D0F467;
   position: fixed;
   top: 0;
 }
