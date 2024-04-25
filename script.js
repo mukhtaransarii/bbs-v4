@@ -1,7 +1,3 @@
-// LOADING PAGE 
-setTimeout( function() {
-  document.querySelector("body").classList.add("bodyScroll")
-},1200);
 
 //FOR PROGRESS BAR WHEN SCROLL
   document.addEventListener('scroll', (e) => {
