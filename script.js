@@ -1,3 +1,7 @@
+setTimeout( function(){
+ document.querySelector("body").classList.add("bodyScroll");
+},1000)
+
 
 // //FOR PROGRESS BAR WHEN SCROLL
 //   document.addEventListener('scroll', (e) => {
