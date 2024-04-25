@@ -45,14 +45,14 @@ body{
 
 /* LOADING  PAGE*/
 
-.prog{
+/* .prog{
   --progress: 0;
   height: 1px;
   width: var(--progress);
   background-color: #D0F467;
   position: fixed;
   top: 0;
-}
+} */
 
 /* TOP FIXED NAVBAR */
 nav{
