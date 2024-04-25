@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
@@ -75,6 +77,14 @@ body{
   to{
     transform: rotate(360deg);
   }
+}
+.prog{
+  --progress: 0;
+  height: 1px;
+  width: var(--progress);
+  background-color: red;
+  position: fixed;
+  top: 0;
 }
 
 /* TOP FIXED NAVBAR */
