@@ -1,16 +1,9 @@
-setTimeout( function(){
- document.querySelector("body").classList.add("bodyScroll");
-},1000)
+// LOADING PAGE 
+setTimeout( function() {
+  document.querySelector("body").classList.add("bodyScroll")
+},1200);
 
 
-// //FOR PROGRESS BAR WHEN SCROLL
-//   document.addEventListener('scroll', (e) => {
-//    const {scrollTop, scrollHeight} = document.documentElement;
-//    const scrollPercentage = `${(scrollTop / (scrollHeight - window.innerHeight)) * 100}%`;
-//    
-//    document.querySelector('.prog').style.setProperty('--progress' , scrollPercentage);
-//   })
-  
 //HAMBURG MENU BAR ICON FUNCTION AND SLIDER BAR
 function from() {
   gsap.from("slider #slider1 li", {
