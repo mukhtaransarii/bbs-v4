@@ -40,7 +40,16 @@ body{
 .bodyScroll{
   overflow-y: auto;
 }
-
+/* PROGRESS BAR  */
+.prog{
+  --progress: 0;
+  height: 2px;
+  width: var(--progress);
+  background-color: #D0F467;
+  position: fixed;
+  top: 0;
+  z-index: 9995;
+}
 /* LOADING  PAGE*/
 .loadingPage{
   height: 100vh;
