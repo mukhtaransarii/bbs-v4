@@ -4,7 +4,7 @@ setTimeout( function() {
 },1200);
 
 
-//HAMBURG MENU BAR ICON FUNCTION AND SLIDER BAR
+//HAMBURG MENU BAR ICON FUNCTION AND SLIDER BARR
 function from() {
   gsap.from("slider #slider1 li", {
     y: 90,
