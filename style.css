@@ -44,40 +44,7 @@ body{
 }
 
 /* LOADING  PAGE*/
-.loadingPage{
-  height: 100vh;
-  width: 100vw;
-  background-color: var(--black);
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 99999;
-  
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-.loadingPage .spinner{
-  height: 15px;
-  width: 15px;
-  border: solid 2px #F4F4F6;
-  border-radius: 50%;
-  border-top-color: #A18BF9;
-  animation: rotate 0.2s linear ;
-}
-.loadingPage h4{
-  color: var(--white);
-  font-weight: 500;
-}
-@keyframes rotate {
-  from{
-    transform: rotate(0deg);
-  }
-  to{
-    transform: rotate(360deg);
-  }
-}
+
 .prog{
   --progress: 0;
   height: 1px;
